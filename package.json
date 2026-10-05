@@ -1,0 +1,29 @@
+{
+  "name": "pi-nu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A Nushell command tool for Pi, with model-selected output formatting.",
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "tsc"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.0.2",
+    "@types/node": "26.6.4",
+    "typebox": "1.3.34",
+    "typescript": "7.0.2"
+  }
+}
